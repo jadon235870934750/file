@@ -1,0 +1,39 @@
+Let's make a game!
+	name:Toliet Clicker
+	by:Jadin
+desc:Click Toliets like Skibdid
+	version:1.0
+CSS
+#game.on 
+{
+    background-size: 100% 100%;
+    image-rendering: pixelated;
+}
+Settings
+	background:https://cdn.discordapp.com/attachments/1323108598666104912/1330603592800931910/Z.png?ex=678e94a9&is=678d4329&hm=1c1b7be9c2250381f98f1378de22176d3288ba756941aff7bb4e224946305bfb&
+	stylesheet:stuff/bigBlue.css
+
+Buildings
+	*toliet|toliets
+		name:toliet|toliets
+		desc:toliet will skibidi
+		on tick:yield 1 toliet
+		cost:10 steps
+		icon:https://cdn.discordapp.com/attachments/1323108598666104912/1330603592800931910/Z.png?ex=678e94a9&is=678d4329&hm=1c1b7be9c2250381f98f1378de22176d3288ba756941aff7bb4e224946305bfb&
+
+Resources
+	*toliet|toliets
+		name:Toliet|Toliets
+		icon:https://cdn.discordapp.com/attachments/1323108598666104912/1330603592800931910/Z.png?ex=678e94a9&is=678d4329&hm=1c1b7be9c2250381f98f1378de22176d3288ba756941aff7bb4e224946305bfb&
+
+Buttons
+	*WalkerButton
+		on click:yield 1 toliet
+		class:bigButton hasFlares
+		icon:https://cdn.discordapp.com/attachments/1323108598666104912/1330603592800931910/Z.png?ex=678e94a9&is=678d4329&hm=1c1b7be9c2250381f98f1378de22176d3288ba756941aff7bb4e224946305bfb&
+Upgrades
+	*strongfloor
+		name:Stronger Floor
+		desc:Makes the floor sturdier for toliet to walk on
+		passive:multiply yield of toliets by 2
+		cost:100 toliet
